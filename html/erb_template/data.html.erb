@@ -1,0 +1,29 @@
+<head>
+<title><%= table_name%></title>
+<style type="text/css">
+table{
+       margin: auto;
+}
+</style>
+</head>
+</head>
+<body>
+<table border="1px" cellspacing="1px">
+    <thead>
+        <tr bgcolor="#64eee1">
+          <% attrs.each do |attr| %>
+            <th><%= attr%></th>
+          <% end %>
+        </tr>
+    <thead>
+    <tbody>
+        <% @data[table_name].each do |row|%>
+	    <tr bgcolor="#e0ffff">
+		<% row.each do |data|%>
+		    <td><%= data%></td>
+		<%end%>
+	    </tr>
+	<% end %>
+    </tbody>
+</table>
+</body>

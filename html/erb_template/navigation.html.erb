@@ -1,0 +1,41 @@
+<head>
+<title>Test Report</title>
+<style type="text/css">
+     button {  
+        width: 200px;  
+        padding:8px;  
+        background-color: #428bca;  
+        border-color: #357ebd;  
+        color: #fff;  
+        -moz-border-radius: 10px;  
+        -webkit-border-radius: 10px;  
+        border-radius:10px
+        -khtml-border-radius: 10px; /* for old Konqueror browsers */  
+        text-align: center;  
+        vertical-align: middle;  
+        border: 1px solid transparent;  
+        font-weight: 900;  
+        font-size:125%;
+	margin:0 auto
+      }  
+</style>
+</head>
+
+<body>
+</br>
+</br>
+</br>
+<div style="text-align:center">
+<% @table_name.each do |table| %>
+</br>
+</br>
+</br>
+<a href="<%= table%>.html" target="_blank">
+<button type="button"><%= table%></button>
+</a>
+</br>
+</br>
+</br>
+<% end %>
+</div>
+</body>

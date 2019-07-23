@@ -1,0 +1,21 @@
+<head>
+<title><%= table_name%></title>
+<style type="text/css">
+table{
+       margin: auto;
+}
+</style>
+</head>
+
+<body>
+<table border="1px" cellspacing="1px">
+    <thead>
+        <tr bgcolor="#64eee1">
+          <% attrs.each do |attr| %>
+            <th><%= attr%></th>
+          <% end %>
+        </tr>
+    <thead>
+</table>
+
+</body>
